@@ -1,0 +1,14 @@
+body{
+  margin: 0px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
