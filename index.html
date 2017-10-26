@@ -22,12 +22,47 @@
               <input type="text" name="name" placeholder="Nombre de proceso" value="" required>
               <input type="number" name="quantum" placeholder="Quantum (seg)" value="" required>
               <input type="number" name="prioridad" placeholder="Prioridad" value="" required>
+
               <input type="submit" name="submit" value="Agregar">
+              <input type="button" name="Iniciar" value="Iniciar simulacion">
             </form>
+          </div>
+          <div class="hide" id="start">
+            <select class="" name="orden" id="seleccion" placeholder="--Seleccione el tipo de Orden--" required>
+              <option value="fifo" >FIFO</option>
+              <option value="lifo" >LIFO</option>
+              <option value="sjf"  >Short Job First</option>
+              <option value="priority">Prioridad</option>
+            </select>
+            <input type="button" name="go" id="go" value="GO!">
+
+          </div>
+          <div class="hide" id="table">
+            <table class="tablew">
+              <tr row>
+
+              <th>Nombre</th>
+              <th>Duracion</th>
+              <th>Prioridad</th>
+              <th>Estado</th>
+            </tr>
+            </table>
           </div>
 
         </div>
         <div class="second-wraper">
+          <table class="tablep">
+            <tr>
+              <th>Nombre</th>
+              <th>Duracion</th>
+              <th>Estado</th>
+            </tr>
+            <tr>
+              <td id="nombrep"></td>
+              <td id="quantump"></td>
+              <td id="estadop"></td>
+            </tr>
+          </table>
 
         </div>
         <div class="third-wraper">
