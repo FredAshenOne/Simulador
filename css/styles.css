@@ -1,51 +1,35 @@
 body{
-  background-color: silver;
   margin: 0px;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(4, 5, 29);
 }
 .main-box{
-  margin: 0px;
-  height: 80%;
-  width: 80%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.title-box{
-  height:35%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
-}
-
-.title,.round,.sjf,.priority{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  transition: background-color .3s;
-  font-family: 'Open Sans Condensed';
-  width: 50%;
-  max-height: 25%;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.title:hover,.round:hover,.sjf:hover,.priority:hover{
-  background-color:rgb(79, 140, 222);
-  color: white;
-}
-
-.sub-menu{
-  width: 80%;
-  height: 50%;
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
+
+.first-wraper, .second-wraper, .third-wraper{
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newp{
+  height: 40px;
+  width: 40px;
+  color:white;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 20;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.
