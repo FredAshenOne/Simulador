@@ -14,10 +14,15 @@
   <body>
     <div class="main-box">
         <div class="first-wraper">
-          <i class="material-icons newp">note_add</i>
-          <div class="formulario">
-            <form class="" id="form" action="index.html" method="post">
-
+          <span class="icon" id="add">
+            <i class="material-icons newp">note_add</i>
+          </span>
+          <div class="hide" id="form">
+            <form class="" action="index.html" method="post">
+              <input type="text" name="name" placeholder="Nombre de proceso" value="" required>
+              <input type="number" name="quantum" placeholder="Quantum (seg)" value="" required>
+              <input type="number" name="prioridad" placeholder="Prioridad" value="" required>
+              <input type="submit" name="submit" value="Agregar">
             </form>
           </div>
 

@@ -21,15 +21,69 @@ body{
 }
 
 .newp{
-  height: 40px;
-  width: 40px;
   color:white;
-  cursor: pointer;
-  border: 1px solid white;
-  border-radius: 50%;
   font-size: 20;
-  text-align: center;
-  vertical-align: middle;
 }
 
-.
+.icon{
+  height: 40px;
+  width: 40px;
+  border: 1px dashed rgb(150, 5, 97);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+}
+
+form input[type=text], form input[type=number] {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+  width: 100%;
+  font-family: 'Open Sans Condensed';
+  font-size: 18px;
+  border-radius: 5px;
+  border: solid 1px rgb(150, 5, 97);
+}
+
+input{
+  text-align: center;
+  margin-top: 5px;
+}
+form ::-webkit-input-placeholder{
+  color: white;
+}
+form input[type=submit]{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+  height: 30px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  border: dashed rgb(150, 5, 97) 1px;
+  transition: background-color .3s;
+  font-family: 'Open Sans Condensed'
+}
+form input[type=submit]:hover{
+  border:none;
+  background-color: rgb(150, 5, 97);
+  transition: color .5s;
+  font-family: 'Open Sans Condensed';
+  color: white;
+}
+
+.hide{
+  display: none;
+}
