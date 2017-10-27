@@ -10,14 +10,13 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.animateNumber.js"></script>
   </head>
   <body>
     <div class="main-box">
         <div class="first-wraper">
-          <span class="icon" id="add">
-            <i class="material-icons newp">note_add</i>
-          </span>
-          <div class="hide" id="form">
+
+          <div class="formulario" id="form">
             <form class="" action="index.html" method="post">
               <input type="text" name="name" placeholder="Nombre de proceso" value="" required>
               <input type="number" name="quantum" placeholder="Quantum (seg)" value="" required>
@@ -25,15 +24,15 @@
 
               <input type="submit" name="submit" value="Agregar">
               <input type="button" name="Iniciar" value="Iniciar simulacion">
+              <select class="" name="orden" id="seleccion" placeholder="--Seleccione el tipo de Orden--" required>
+                <option value="fifo">FIFO</option>
+                <option value="lifo">LIFO</option>
+                <option value="sjf">Short Job First</option>
+                <option value="priority">Prioridad</option>
+              </select>
             </form>
           </div>
-          <div class="hide" id="start">
-            <select class="" name="orden" id="seleccion" placeholder="--Seleccione el tipo de Orden--" required>
-              <option value="fifo" >FIFO</option>
-              <option value="lifo" >LIFO</option>
-              <option value="sjf"  >Short Job First</option>
-              <option value="priority">Prioridad</option>
-            </select>
+          <div class="start" id="start">
             <input type="button" name="go" id="go" value="GO!">
 
           </div>
@@ -51,6 +50,16 @@
 
         </div>
         <div class="second-wraper">
+          <div class="header">
+            <h6 class="main-header">Simulador de Procesos</h6>
+
+          </div>
+          <div id="note" class="note">
+            <h6 class="pro-header">Agregar Proceso</h6>
+          <span class="icon" id="add">
+            <i class="material-icons newp">note_add</i>
+          </span>
+        </div>
           <table class="tablep">
             <tr>
               <th>Nombre</th>
@@ -58,9 +67,12 @@
               <th>Estado</th>
             </tr>
             <tr>
-              <td id="nombrep"></td>
-              <td id="quantump"></td>
-              <td id="estadop"></td>
+              <td id="nombrep">ell</td>
+              <td id="quantump">
+                <span id="counter">90</span>
+
+              </td>
+              <td id="estadop">Procesando</td>
             </tr>
           </table>
 
