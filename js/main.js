@@ -124,7 +124,10 @@ $('#go').on('click',function(){
 function printProcess(p){
   var name = p[0].nombre;
   $('#nombrep').html(name);
-
+  var time = p[0].quantum;
+  for (var i = 0; i < time; i++) {
+    $('#quantump').html(i);
+  }
 }
 
 });
